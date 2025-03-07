@@ -21,11 +21,11 @@ users_db = {
 }
 
 todos_db = [
-    {"id": 1, "task": "Learn FastAPI", "status": "completed"},
-    {"id": 2, "task": "Build authentication system", "status": "in-progress"},
-    {"id": 3, "task": "Implement to-do API", "status": "pending"},
-    {"id": 4, "task": "Write tests", "status": "pending"},
-    {"id": 5, "task": "Deploy to production", "status": "pending"}
+    {"id": 1, "task": "A", "status": "completed"},
+    {"id": 2, "task": "B", "status": "in-progress"},
+    {"id": 3, "task": "C", "status": "pending"},
+    {"id": 4, "task": "D", "status": "pending"},
+    {"id": 5, "task": "E", "status": "pending"}
 ]
 
 class User(BaseModel):
