@@ -38,6 +38,7 @@ class Todo(BaseModel):
     status: str
 
 class Token(BaseModel):
+    message:str
     access_token: str
     token_type: str
 
@@ -100,7 +101,7 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends()):
         data={"sub": user["username"]}, expires_delta=access_token_expires
     )
     
-    return {"access_token": access_token, "token_type": "bearer"}
+    return {"message": "Login Successfull","access_token": access_token, "token_type": "bearer"}
 
 
 @app.get("/todos", response_model=List[Todo])
